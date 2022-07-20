@@ -87,9 +87,6 @@ margin-left: 6px;
 
 
 .blogs{
-  border: 1px solid chocolate;
-  width: 1200px;
-  height: 1000px;
  display: flex;
  margin-bottom: 100px;
 }
