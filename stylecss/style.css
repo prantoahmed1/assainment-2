@@ -254,58 +254,49 @@ margin-left: 1000px;
 text-decoration: none;
 color: white;
  }
-@media only screen and (max-width:688px) {
-  .container{
-    width:100%;
-    margin: 0%;
-  }
-  
-  .banner {flex-direction: column;
-   
 
-  }
-   .banner{
-    display: flex;
-height: 980px;
-    text-align: center;
-    align-items: center;
-  }
-  .half-width .banner-section{
-  align-items: center;
-  padding-bottom: 10px;
-  }
-  .banner-Title{
-    font-size: 40px;
-  }
-  .half-width .banner-img img{
-  width: 88%;
-    justify-content: center;
-    display: flex;
 
-     
+ 
+
+ 
+
+
+ @media (min-width: 669px) and (max-width: 992px) {
+  .container {
+    margin: 50px 0px;
   }
 
+ 
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  .upcoming-button{
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 0px;
+  }
 
   .blog-all{
-    flex-direction: row;
-    width: max-content;
+    flex-direction: column;
   }
-  .button-blogs{
-    width:50%;
-    margin-bottom: 10px;
-   background-position: center;
+
+  .button-box{
+    border: 3px solid;
+    margin: 10px 15px 30px 15px;
+    width: 33%;
   }
-  .transfer-blogs{
-    width: 100%;
-   
-    display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-row-gap: 20px;
-      
+
+  .transfer-blog:nth-last-child(-n + 3) {
+    display: none;
   }
-   
-    footer{
-      flex-direction: row;
-      width: 100%;
-    }
-   }
+
+  .transfer-blogs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
